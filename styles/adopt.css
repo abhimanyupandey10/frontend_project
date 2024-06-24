@@ -1,0 +1,194 @@
+/* Use the existing CSS theme and add necessary styling */
+
+/* Dark Theme Adjustments */
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 100%;
+    overflow-x: hidden;
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(to bottom, #0d0d2b, #000000);
+    color: white;
+    scroll-behavior: smooth;
+  }
+  
+  .container {
+    padding: 80px 20px;
+  }
+  
+  /* Navbar Styling */
+  .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 10px 20px;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+    transition: background 0.5s, padding 0.5s;
+  }
+  .navbar-brand {
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: #ffffff;
+  }
+  .navbar-nav .nav-link {
+    font-weight: 600;
+    margin: 0 15px;
+    transition: color 0.3s;
+    color: #ffffff;
+  }
+  .navbar-nav .nav-link:hover {
+    color: #ff4081;
+  }
+  
+  /* Card Styling */
+  .card {
+    background: #1c1c3c;
+    color: white;
+    border: none;
+  }
+  .card-title {
+    font-size: 1.75em;
+  }
+  .card-text {
+    font-size: 1.2em;
+  }
+  .btn-primary {
+    background: #ff4081;
+    border: none;
+  }
+  .btn-primary:hover {
+    background: #e60073;
+  }
+  
+  /* Background Particles */
+  .particles, .star-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: -1;
+  }
+  .particles span, .star-background span {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    transform: scale(0);
+    animation: particle-animation 4s ease-in-out infinite;
+  }
+  @keyframes particle-animation {
+    0% {
+      transform: scale(0);
+    }
+    50% {
+      transform: scale(1);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(0);
+      opacity: 0;
+    }
+  }
+  .star-background span {
+    background: rgba(255, 255, 255, 0.5);
+    animation: star-animation 4s ease-in-out infinite;
+  }
+  @keyframes star-animation {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  /* Loader Styling */
+  .loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #0d0d2b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 1s ease;
+    z-index: 1000;
+    opacity: 1;
+  }
+  .loader.active {
+    opacity: 0;
+    pointer-events: none;
+  }
+  .spinner {
+    border: 4px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    border-top: 4px solid #ff4081;
+    width: 40px;
+    height: 40px;
+    animation: spin 0.8s linear infinite;
+  }
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  /* Progress Bar Styling */
+  .progressbar-container {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background: rgba(255, 255, 255, 0.5);
+    z-index: 1000;
+  }
+  .progressbar {
+    position: absolute;
+    bottom: 0;
+    width: 0%;
+    height: 100%;
+    background: #ff4081;
+    transition: height 0.3s, width 0.3s ease;
+    animation: glow 1s ease-in-out infinite alternate;
+  }
+  @keyframes glow {
+    0% {
+      box-shadow: 0 0 10px #ff4081;
+    }
+    100% {
+      box-shadow: 0 0 20px #ff4081;
+    }
+  }
+  
+  /* Footer Styling */
+  .footer {
+    background-color: #0d0d2b;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  .footer p {
+    margin: 0;
+  }
+  
+  /* Smooth scrolling */
+  html {
+    scroll-behavior: smooth;
+  }
+  

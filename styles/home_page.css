@@ -1,4 +1,4 @@
-/* Custom styles for enhanced appearance */
+
 body, html {
   margin: 0;
   padding: 0;
@@ -11,7 +11,7 @@ body, html {
   scroll-behavior: smooth;
 }
 
-/* Navbar Styling */
+
 .navbar {
   position: fixed;
   top: 0;
@@ -37,7 +37,7 @@ body, html {
   color: #ff4081;
 }
 
-/* Section Styling */
+
 .container, .section {
   padding: 100px 20px;
   text-align: center;
@@ -63,7 +63,7 @@ p {
   margin-bottom: 1em;
 }
 
-/* Background Particles */
+
 .particles, .star-background {
   position: fixed;
   top: 0;
@@ -109,7 +109,7 @@ p {
   }
 }
 
-/* Loader Styling */
+
 .loader {
   position: fixed;
   top: 0;
@@ -145,7 +145,7 @@ p {
   }
 }
 
-/* Team Member Styling */
+
 .team-member img {
   width: 80%;
   border-radius: 50%;
@@ -157,7 +157,7 @@ p {
   box-shadow: 0 4px 15px rgba(255, 64, 129, 0.5);
 }
 
-/* Progress Bar Styling */
+
 .progressbar-container {
   position: fixed;
   bottom: 0;
@@ -185,7 +185,7 @@ p {
   }
 }
 
-/* Footer Styling */
+
 .footer {
   background-color: #0d0d2b;
   color: white;
@@ -199,7 +199,7 @@ p {
   margin: 0;
 }
 
-/* Smooth scrolling */
+
 html {
   scroll-behavior: smooth;
 }
@@ -344,7 +344,7 @@ to {
   display: block;
 }
 
-/* Optional: Add some shadow to the images for better effect */
+
 .carousel-inner .carousel-item img {
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 }

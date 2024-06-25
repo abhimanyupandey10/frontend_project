@@ -5,23 +5,23 @@ $(document).ready(function() {
       $(this).scrollTop(0);
   }, 3500);
 
-  // Infinite scrolling with animation
+  
   $(window).scroll(function() {
       var scrollDistance = $(window).scrollTop();
       var windowHeight = $(window).height();
 
-      // Loop through each section to check if it should be animated
+      
       $('.section').each(function(i) {
           var sectionTop = $(this).offset().top;
 
-          // If section is visible on the screen
+          
           if (sectionTop <= scrollDistance + windowHeight) {
               $(this).addClass('visible');
           }
       });
   });
 
-  // Progress bar on scroll
+  
   $(window).scroll(function() {
       var scrollDistance = $(window).scrollTop();
       var documentHeight = $(document).height() - $(window).height();
@@ -29,18 +29,18 @@ $(document).ready(function() {
       $('#progressbar').css('width', scrollPercentage + '%');
   });
 
-  // Background particles setup
+  
   var particles = $('.particles');
-  var particleCount = 100; // Adjust particle count as needed
+  var particleCount = 100; 
 
   for (var i = 0; i < particleCount; i++) {
       var size = Math.random() * 5;
       particles.append('<span style="top:' + Math.random() * 100 + '%; left:' + Math.random() * 100 + '%; width:' + size + 'px; height:' + size + 'px; animation-delay:' + (Math.random() * 4) + 's;"></span>');
   }
 
-  // Star background setup
+  
   var stars = $('.star-background');
-  var starCount = 50; // Adjust star count as needed
+  var starCount = 50; 
 
   for (var i = 0; i < starCount; i++) {
       var size = Math.random() * 3;
@@ -59,14 +59,14 @@ $(document).ready(function() {
         { user: "Sophia Wilson", comment: "Excellent place to find a new furry friend. Adopted a kitten here and she's a joy.", rating: getRandomRating() },
         { user: "David Garcia", comment: "The adoption center has a clean and welcoming atmosphere. Found my perfect dog here.", rating: getRandomRating() },
         { user: "Emma Martinez", comment: "Helpful staff and a variety of animals to choose from. Adopted a rabbit and he's delightful.", rating: getRandomRating() },
-        // Add more testimonials as needed
+        
     ];
 
     displayTestimonials(testimonials);
 
     function displayTestimonials(testimonials) {
         var testimonialContainer = $('#testimonialContainer');
-        testimonialContainer.empty(); // Clear existing content
+        testimonialContainer.empty(); 
 
         testimonials.forEach(function(testimonial) {
             var starsHtml = generateStarsHtml(testimonial.rating);
@@ -83,7 +83,7 @@ $(document).ready(function() {
     }
 
     function getRandomRating() {
-        return Math.floor(Math.random() * 5) + 1; // Random rating between 1 and 5
+        return Math.floor(Math.random() * 5) + 1; 
     }
 
     function generateStarsHtml(rating) {
